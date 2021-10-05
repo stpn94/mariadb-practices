@@ -236,7 +236,7 @@ FROM
 
 -- manager table
 
-SELECT
+SELECT 
     dept_name,
     CONCAT(first_name, ' ', last_name) name,
     salary,
