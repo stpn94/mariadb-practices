@@ -14,7 +14,7 @@ CREATE TABLE pet (
     name VARCHAR(20),
     owner VARCHAR(20),
     species VARCHAR(20),
-    gender CHAR(1),
+    sex CHAR(1),
     birth DATE,
     death DATE
 );
@@ -38,5 +38,24 @@ insert into pet values
 select *
   from pet;
   
-LOAD data local infile "pet.txt" INTO Table pet;
+LOAD data local infile 'c:\\pet.txt' INTO Table pet;
+
+-- 1998년 이 후에 태어난 동물을 조회할 때:
+SELECT *
+  FROM pet 
+ WHERE birth >= '1998-1-1'; 
+
+-- 암컷 강아지들을 조회 할 때, 논리 연산자 AND를 함께 사용해서:
+SELECT *
+  FROM pet
+ WHERE species = 'dog' || sex = 'm';
+
+
+-- 뱀과 새를 모두 조회할 때는 논리 연산자 OR와 함께:
+SELECT * FROM pet WHERE species = 'snake' OR species ='bird'; 
+
+-- 특정 Row select
+select name, birth from pet;
+
+
 
