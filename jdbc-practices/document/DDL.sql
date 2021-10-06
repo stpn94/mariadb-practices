@@ -1,0 +1,3 @@
+-- DDL
+select user(),database();
+
