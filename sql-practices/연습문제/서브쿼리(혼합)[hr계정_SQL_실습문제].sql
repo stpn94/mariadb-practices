@@ -33,7 +33,7 @@ FROM
         JOIN
     salaries s ON de.emp_no = s.emp_no
 WHERE
-    (dept_no , salary) IN (SELECT 
+    (d.dept_no , salary) IN (SELECT 
             d.dept_no, MAX(salary)
         FROM
             dept_emp de
