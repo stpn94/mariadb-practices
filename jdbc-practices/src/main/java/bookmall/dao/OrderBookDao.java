@@ -15,8 +15,8 @@ public class OrderBookDao {
 		String sql = "insert into order_book values(? ,? ,?)";
 		try (Connection con = JdbcConn.getConnection(); PreparedStatement pstmt = con.prepareStatement(sql)) {
 			pstmt.setInt(1, vo.getBookNo());
-			pstmt.setLong(2, vo.getOrderNo());
 			pstmt.setInt(3, vo.getQuantity());
+			pstmt.setLong(2, vo.getOrderNo());
 			return pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

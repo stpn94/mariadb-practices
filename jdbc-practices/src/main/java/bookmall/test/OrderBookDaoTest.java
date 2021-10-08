@@ -24,7 +24,7 @@ public class OrderBookDaoTest {
 		OrderBookVo vo = null;
 		vo = new OrderBookVo();
 		vo.setBookNo(1);
-		vo.setOrderNo(1);
+		vo.setOrderNo(2);
 		vo.setQuantity(1);
 		new OrderBookDao().insert(vo);
 		vo = new OrderBookVo();

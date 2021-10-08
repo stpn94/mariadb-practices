@@ -2,8 +2,8 @@ package bookmall.vo;
 
 public class BookVo {
 
-	private int no;
-	private String title;
+	private int no;			//insert 하기위해
+	private String title;	//insert 하기위해
 	private int price;
 	private int categoryNo;
 

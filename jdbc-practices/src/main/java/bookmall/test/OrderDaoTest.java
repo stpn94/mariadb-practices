@@ -26,10 +26,6 @@ public class OrderDaoTest {
 		vo.setAddress("서울특별시");
 		vo.setMemberNo(1);
 		new OrderDao().insert(vo);
-		vo.setPrice(20000);
-		vo.setAddress("광주광역시");
-		vo.setMemberNo(2);
-		new OrderDao().insert(vo);
 	}
 
 }

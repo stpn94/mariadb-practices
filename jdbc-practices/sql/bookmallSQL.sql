@@ -20,7 +20,9 @@ insert into category values(null,'history');
 
 -- cart
 -- 도서제목 수량 가격
+
 desc cart;
+
 select * from cart;
 desc book;
 select m.name as name, b.title as title, quantity, b.price*quantity as price from cart c , book b, member m where b.no=c.book_no and m.no = c.member_no;

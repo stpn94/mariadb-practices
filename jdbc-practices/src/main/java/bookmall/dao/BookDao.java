@@ -54,8 +54,4 @@ public class BookDao {
 		return 0;
 	};
 
-//	public int delete(int no) {
-//		
-//		return no;
-//	};
 }
