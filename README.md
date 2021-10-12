@@ -1,5 +1,5 @@
 ## MariaDB-practice
-
+## bookmall & bookshop 실습 & hr 실습 & employee 실습 & JDBC 연결 실습
 정리는 블로그에
 
 ## WorkBanch(워크벤치) 설치 및 RDBMS 의 시작 DCL 해보기. https://ok-vamos.tistory.com/12
@@ -15,3 +15,5 @@
 ## JDBC (Programming) 실습                          https://ok-vamos.tistory.com/25
 ## JDBC 처음부터 끝까지 사용해 보기(proj-Bookmall)-1  https://ok-vamos.tistory.com/26
 ## JDBC 처음부터 끝까지 사용해 보기(proj-Bookmall)-2  https://ok-vamos.tistory.com/28
+
+
